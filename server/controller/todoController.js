@@ -3,6 +3,7 @@ const Todo = require('../models/todoModel').Todo;
 
 const todoController = {
   get: (req, res) => {
+    console.log('this is req.data: ', req.data);
     Todo.find({}, (err, data) => {
       if (err) {
         console.log('Err: ', err);
