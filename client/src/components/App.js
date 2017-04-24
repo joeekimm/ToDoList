@@ -8,11 +8,13 @@ class App extends React.Component {
 
     }
   }
-  
+
   render() {
-    <div>
-      Hello Todo App!
-    </div>
+    return (
+      <div>
+        Hello Todo App!
+      </div>
+    )
   }
 }
 

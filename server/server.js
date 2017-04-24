@@ -12,7 +12,7 @@ app.use(parser.urlencoded({
   extended: true
 }));
 
-app.use(express.static(path.join(__dirname, '../client/')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 app.use('/', router);
 
 app.listen(port, err => { err ? console.log('Err: ', err) : console.log('Connection Established'); });
